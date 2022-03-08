@@ -4,28 +4,11 @@ import '../styles/elements/_deck.css';
 import CreateDeck from './CreateDeck'
 import Shuffle from './Shuffle'
 
-const SUITS = ["H", "S", "D", "C"];
-const CARDS = [
-  "A",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "J",
-  "Q",
-  "K",
-];
-
 const Deck = () => {
   
-  let deck = CreateDeck(SUITS, CARDS)
+  let deck = CreateDeck();
   let shuffleDeck = Shuffle(deck);
-  let twentyOneCards = shuffleDeck.slice(0,21)
+  let twentyOneCards = shuffleDeck.slice(0,21);
 
   return (
     <div className='deck-container'> 

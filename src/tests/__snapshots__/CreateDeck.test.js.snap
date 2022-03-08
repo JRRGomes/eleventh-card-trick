@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateDeck should return a array of objects with 52 cards/suits 1`] = `
+Array [
+  Object {
+    "card": "A",
+    "suit": "H",
+  },
+  Object {
+    "card": "2",
+    "suit": "H",
+  },
+  Object {
+    "card": "3",
+    "suit": "H",
+  },
+  Object {
+    "card": "4",
+    "suit": "H",
+  },
+  Object {
+    "card": "5",
+    "suit": "H",
+  },
+  Object {
+    "card": "6",
+    "suit": "H",
+  },
+  Object {
+    "card": "7",
+    "suit": "H",
+  },
+  Object {
+    "card": "8",
+    "suit": "H",
+  },
+  Object {
+    "card": "9",
+    "suit": "H",
+  },
+  Object {
+    "card": "10",
+    "suit": "H",
+  },
+  Object {
+    "card": "J",
+    "suit": "H",
+  },
+  Object {
+    "card": "Q",
+    "suit": "H",
+  },
+  Object {
+    "card": "K",
+    "suit": "H",
+  },
+  Object {
+    "card": "A",
+    "suit": "S",
+  },
+  Object {
+    "card": "2",
+    "suit": "S",
+  },
+  Object {
+    "card": "3",
+    "suit": "S",
+  },
+  Object {
+    "card": "4",
+    "suit": "S",
+  },
+  Object {
+    "card": "5",
+    "suit": "S",
+  },
+  Object {
+    "card": "6",
+    "suit": "S",
+  },
+  Object {
+    "card": "7",
+    "suit": "S",
+  },
+  Object {
+    "card": "8",
+    "suit": "S",
+  },
+  Object {
+    "card": "9",
+    "suit": "S",
+  },
+  Object {
+    "card": "10",
+    "suit": "S",
+  },
+  Object {
+    "card": "J",
+    "suit": "S",
+  },
+  Object {
+    "card": "Q",
+    "suit": "S",
+  },
+  Object {
+    "card": "K",
+    "suit": "S",
+  },
+  Object {
+    "card": "A",
+    "suit": "D",
+  },
+  Object {
+    "card": "2",
+    "suit": "D",
+  },
+  Object {
+    "card": "3",
+    "suit": "D",
+  },
+  Object {
+    "card": "4",
+    "suit": "D",
+  },
+  Object {
+    "card": "5",
+    "suit": "D",
+  },
+  Object {
+    "card": "6",
+    "suit": "D",
+  },
+  Object {
+    "card": "7",
+    "suit": "D",
+  },
+  Object {
+    "card": "8",
+    "suit": "D",
+  },
+  Object {
+    "card": "9",
+    "suit": "D",
+  },
+  Object {
+    "card": "10",
+    "suit": "D",
+  },
+  Object {
+    "card": "J",
+    "suit": "D",
+  },
+  Object {
+    "card": "Q",
+    "suit": "D",
+  },
+  Object {
+    "card": "K",
+    "suit": "D",
+  },
+  Object {
+    "card": "A",
+    "suit": "C",
+  },
+  Object {
+    "card": "2",
+    "suit": "C",
+  },
+  Object {
+    "card": "3",
+    "suit": "C",
+  },
+  Object {
+    "card": "4",
+    "suit": "C",
+  },
+  Object {
+    "card": "5",
+    "suit": "C",
+  },
+  Object {
+    "card": "6",
+    "suit": "C",
+  },
+  Object {
+    "card": "7",
+    "suit": "C",
+  },
+  Object {
+    "card": "8",
+    "suit": "C",
+  },
+  Object {
+    "card": "9",
+    "suit": "C",
+  },
+  Object {
+    "card": "10",
+    "suit": "C",
+  },
+  Object {
+    "card": "J",
+    "suit": "C",
+  },
+  Object {
+    "card": "Q",
+    "suit": "C",
+  },
+  Object {
+    "card": "K",
+    "suit": "C",
+  },
+]
+`;
