@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/elements/_deck-container.css';
 import '../styles/elements/_deck.css';
 import CreateDeck from './CreateDeck'
+import Shuffle from './Shuffle'
 
 const SUITS = ["H", "S", "D", "C"];
 const CARDS = [
@@ -23,9 +24,8 @@ const CARDS = [
 const Deck = () => {
   
   let deck = CreateDeck(SUITS, CARDS)
-
-  let shuffled = [...deck].sort(() => 0.5 - Math.random()).slice(0,21);
-  let twentyOneCards = shuffled.slice(0,21)
+  let shuffleDeck = Shuffle(deck);
+  let twentyOneCards = shuffleDeck.slice(0,21)
 
   return (
     <div className='deck-container'> 
