@@ -1,5 +1,5 @@
 const Shuffle = (deck) => {
-  let shuffle = [...deck].sort(() => 0.5 - Math.random()).slice(0,21);
+  let shuffle = [...deck].sort(() => 0.5 - Math.random());
   return shuffle
 }
 
