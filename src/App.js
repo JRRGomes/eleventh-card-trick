@@ -1,8 +1,12 @@
-import './App.css';
+import './App.js'
+import Deck from './components/Deck';
 
 const App = () => {
   return (
-    <h1>Eleventh Card Trick</h1>
+    <div>
+      <h1>Eleventh Card Trick</h1>
+      <Deck />
+    </div>
   );
 }
 
