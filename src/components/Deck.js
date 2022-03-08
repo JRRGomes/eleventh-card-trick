@@ -1,4 +1,6 @@
 import React from 'react'
+import '../styles/elements/_deck-container.css';
+import '../styles/elements/_deck.css';
 
 const SUITS = ["H", "S", "D", "C"];
 const CARDS = [
@@ -26,9 +28,9 @@ const Deck = () => {
   let twentyOneCards = shuffled.slice(0,21)
 
   return (
-    <div> 
+    <div className='deck-container'> 
       {twentyOneCards.map(({suit, card}, index) => (
-        <div key={index}>{card}{suit}</div>
+        <div className='deck' key={index}>{card}{suit}</div>
       ))}
     </div>
   )

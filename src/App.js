@@ -1,9 +1,9 @@
-import './App.js'
+import './App.css';
 import Deck from './components/Deck';
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <h1>Eleventh Card Trick</h1>
       <Deck />
     </div>
