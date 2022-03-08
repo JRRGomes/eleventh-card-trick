@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import '../styles/elements/_deck-container.css';
 import '../styles/elements/_deck.css';
+import CreateDeck from './CreateDeck'
 
 const SUITS = ["H", "S", "D", "C"];
 const CARDS = [
@@ -20,9 +21,8 @@ const CARDS = [
 ];
 
 const Deck = () => {
-  let deck = SUITS.flatMap((suit) => 
-  CARDS.map(card => ({suit: suit, card: card})
-  ))
+  
+  let deck = CreateDeck(SUITS, CARDS)
 
   let shuffled = [...deck].sort(() => 0.5 - Math.random()).slice(0,21);
   let twentyOneCards = shuffled.slice(0,21)

@@ -2,6 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 55%;
+  max-width: 40%;
   margin-top: var(--space-small);
 }
