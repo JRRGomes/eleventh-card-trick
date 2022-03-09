@@ -15,10 +15,10 @@ const CARDS = [
   "K",
 ];
 
-const CreateDeck = () => {
-  let deck = SUITS.flatMap((suit) => 
+const createDeck = () => {
+  const deck = SUITS.flatMap((suit) => 
   CARDS.map(card => ({suit: suit, card: card})
   ))
   return deck
 }
-export default CreateDeck
+export const DECK = createDeck()

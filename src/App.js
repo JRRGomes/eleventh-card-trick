@@ -1,5 +1,6 @@
-import './App.css';
 import Deck from './components/Deck';
+
+import './App.css';
 
 const App = () => {
   return (
