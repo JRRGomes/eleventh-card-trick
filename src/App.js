@@ -1,8 +1,13 @@
+import Deck from './components/Deck';
+
 import './App.css';
 
 const App = () => {
   return (
-    <h1>Eleventh Card Trick</h1>
+    <div className='container'>
+      <h1>Eleventh Card Trick</h1>
+      <Deck />
+    </div>
   );
 }
 
