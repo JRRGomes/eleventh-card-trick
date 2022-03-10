@@ -2,7 +2,6 @@ import { DECK } from '../util/createDeck';
 import DeckCard from './DeckCard';
 import shuffle from '../util/shuffle';
 
-
 const DeckRows = () => {
   const shuffleDeck = shuffle(DECK);
   const twentyOneCards = shuffleDeck.slice(0,21);
@@ -13,7 +12,7 @@ const DeckRows = () => {
 
   return (
     <>
-    <div className='deck-container'> 
+    <div className='deck-container'>
       {firstRow.map((cardObject) => (
         <DeckCard key={`${cardObject.suit}-${cardObject.card}`} {...cardObject} />
       ))}
