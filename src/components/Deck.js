@@ -1,11 +1,10 @@
 import React from 'react';
 import { DECK } from '../util/createDeck';
 import shuffle from '../util/shuffle';
-import DeckCard from './DeckCard';
+import DeckRows from './DeckRows';
 
 import '../styles/elements/_deck-container.css';
 import '../styles/elements/_deck.css';
-import DeckRows from './DeckRows';
 
 const Deck = () => {
   const shuffleDeck = shuffle(DECK);
