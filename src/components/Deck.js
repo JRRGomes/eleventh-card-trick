@@ -1,24 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DeckRow from './DeckRow';
-import { DECK } from '../util/createDeck';
-import shuffle from '../util/shuffle';
+import { TRICKDECK } from '../util/createTrickDeck';
 
 import '../styles/elements/_deck-container.css';
 import '../styles/elements/_deck.css';
+import putRowOnCenter from '../util/putRowOnCenter';
 
 const Deck = () => {
-  const shuffleDeck = shuffle(DECK);
-  const twentyOneCards = shuffleDeck.slice(0,21);
 
-  const firstRow = [...twentyOneCards].splice(0,7);
-  const secondRow = [...twentyOneCards].splice(7,7);
-  const thirdRow = [...twentyOneCards].splice(14,7);
+  const [currentDeck, setcurrentDeck] = useState(TRICKDECK);
+
+  function handleDeckRowClick(id){  
+    setcurrentDeck(putRowOnCenter(id, currentDeck))
+  }
 
   return (
     <>
-      <DeckRow row={firstRow} />
-      <DeckRow row={secondRow} />
-      <DeckRow row={thirdRow} />
+      {currentDeck.map((row, index)=>
+        <DeckRow row={row} handleButtonClick={() => handleDeckRowClick(index)} id={index} key={index} />
+      )}
     </>
   )
 }

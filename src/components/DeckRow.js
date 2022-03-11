@@ -1,9 +1,12 @@
 import DeckCard from './DeckCard';
 
-const DeckRow = ({row}) => {
+import '../styles/elements/_button.css';
+
+const DeckRow = ({row, handleButtonClick}) => {
 
   return (
       <div className='deck-container'>
+        <button onClick={handleButtonClick} className='button'>my card is here</button>
         {row.map((cardObject) => (
           <DeckCard key={`${cardObject.suit}-${cardObject.card}`} {...cardObject} />
         ))}
